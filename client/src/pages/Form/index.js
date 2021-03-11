@@ -3,6 +3,7 @@ import "./style.css";
 import Name from "../../components/Name";
 import Email from "../../components/Email";
 import Phone from "../../components/Phone";
+import Message from "../../components/Message";
 
 function Form() {
   return (
@@ -13,10 +14,7 @@ function Form() {
           <Name/>
           <Email/>
           <Phone/>
-            <label>Message:</label>
-            <br />
-            <textarea id="message" placeholder="Message......."></textarea>
-            <br />
+          <Message/>
             <p>* = Required Fields</p>
             <button className="btn btn-primary" id="submit">
               Send Message
