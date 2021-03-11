@@ -3,14 +3,39 @@ import "./style.css";
 
 function Form() {
   return (
-    <div className="jumbotron">
-      <h1 className="header">
-        <span>Roberts Form #1</span>
-      </h1>
-      <div className="form-group">
-  <label for="usr">Name:</label>
-  {/* <input type="text" className="form-control" id="usr"> */}
-</div>
+    <div className="card">
+      <div className="card-body">
+        <form id="form">
+          <div id="contactInfo">
+            <label>
+              Name: <span>*</span>
+            </label>
+            <br />
+            <input type="text" id="name" placeholder="Name" />
+            <br />
+            <label>
+              Email: <span>*</span>
+            </label>
+            <br />
+            <input type="text" id="email" placeholder="Email" />
+            <br />
+            <label>
+              Contact No: <span>*</span>
+            </label>
+            <br />
+            <input type="text" id="contact" placeholder="10 digit Mobile no." />
+            <br />
+            <label>Message:</label>
+            <br />
+            <textarea id="message" placeholder="Message......."></textarea>
+            <br />
+            <p>* = Required Fields</p>
+            <button className="btn btn-primary" id="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
