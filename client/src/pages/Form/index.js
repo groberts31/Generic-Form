@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Name from "../../components/Name";
 import Email from "../../components/Email";
+import Phone from "../../components/Phone";
 
 function Form() {
   return (
@@ -11,12 +12,7 @@ function Form() {
           <div id="contactInfo">
           <Name/>
           <Email/>
-            <label>
-              Contact No: <span>*</span>
-            </label>
-            <br />
-            <input type="text" id="contact" placeholder="10 digit Mobile no." />
-            <br />
+          <Phone/>
             <label>Message:</label>
             <br />
             <textarea id="message" placeholder="Message......."></textarea>
