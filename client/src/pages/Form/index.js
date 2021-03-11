@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Name from "../../components/Name";
+import Email from "../../components/Email";
 
 function Form() {
   return (
@@ -9,12 +10,7 @@ function Form() {
         <form id="form">
           <div id="contactInfo">
           <Name/>
-            <label>
-              Email: <span>*</span>
-            </label>
-            <br />
-            <input type="text" id="email" placeholder="Email" />
-            <br />
+          <Email/>
             <label>
               Contact No: <span>*</span>
             </label>
